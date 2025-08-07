@@ -48,42 +48,26 @@ const Banner = () => {
     );
 
     return (
-        <div className="lg:flex items-center justify-center mx-auto my-16">
+        <div className="lg:flex items-center justify-center mx-auto mt-16 mb-32 w-[100%]">
             <div className="lg:w-[48%] text-center lg:text-left">
-                <h2 className="text-3xl font-bold mb-3">Gear That Powers Your Passion</h2>
-                <p className="text-lg text-gray-600 mb-3">Explore cutting-edge accessories built for creators, <br />gamers, and pros. Every click, every detail—upgraded.</p>
+                <h2 className="lg:text-5xl md:text-3xl font-bold mb-3">Gear That Powers <br />Your Passion</h2>
+                <p className="text-xl text-gray-600 mb-3">Explore cutting-edge accessories built for creators, <br />gamers, and pros. Every click, every detail—upgraded.</p>
                 
             </div>
-            <div className="wrapper">
-                <div className="scene">
-                    <div className="carousel keen-slider" ref={sliderRef}>
-                        <div className="carousel__cell number-slide1">
-                            <img
-                                className="hover:transition hover:duration-150 hover:scale-150"
-                                src={keyboard}
-                                alt="Keyboard"
-                            />
+            <div className="wrapper ">
+                <div className="scene ">
+                    <div className="carousel keen-slider " ref={sliderRef}>
+                        <div className="carousel__cell number-slide1 ">
+                            <img className="hover:transition hover:duration-150 hover:scale-150 " src={keyboard} alt="Keyboard"/>
                         </div>
                         <div className="carousel__cell number-slide2">
-                            <img
-                                className="hover:transition hover:duration-150 hover:scale-150"
-                                src={mouse}
-                                alt="Mouse"
-                            />
+                            <img className="hover:transition hover:duration-150 hover:scale-150" src={mouse} alt="Mouse"/>
                         </div>
                         <div className="carousel__cell number-slide3">
-                            <img
-                                className="hover:transition hover:duration-150 hover:scale-150"
-                                src={headphone}
-                                alt="Headphone"
-                            />
+                            <img className="hover:transition hover:duration-150 hover:scale-150"src={headphone} alt="Headphone"/>
                         </div>
                         <div className="carousel__cell number-slide4">
-                            <img
-                                className="hover:transition hover:duration-150 hover:scale-150"
-                                src={monitor}
-                                alt="Monitor"
-                            />
+                            <img className="hover:transition hover:duration-150 hover:scale-150" src={monitor}alt="Monitor"/>
                         </div>
                     </div>
                 </div>

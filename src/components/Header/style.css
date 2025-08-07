@@ -19,6 +19,7 @@ body {
 }
 
 .number-slide1 {
+  
   background: rgb(64, 175, 255);
   background: linear-gradient(
     128deg,
@@ -82,7 +83,7 @@ body {
   justify-content: center;
 }
 .scene {
-  width: 260px;
+  width: 460px;
   height: 200px;
   perspective: 1000px;
   position: relative;
@@ -97,8 +98,8 @@ body {
 }
 .carousel__cell {
   position: absolute;
-  width: 240px;
+  width: 440px;
   left: 10px;
-  height: 200px;
-  border: 1px solid rgba(0, 0, 0, 0.3);
+  height: 440px;
+  
 }
