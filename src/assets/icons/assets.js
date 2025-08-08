@@ -1,12 +1,12 @@
 import basket_icon from './basket_icon.png'
-import logo from './logo.png'
-import header_img from './header_img'
-import search_icon from './search_icon.png'
 
-import keyboards from './keyboards.avif'
-import mouses from './mouse.avif'
-import monitors from './monitors'
-import headphones from "./headphones.avif"
+import logo from "./logo.png"
+import search_icon from './search_icon.png'
+import header_img from "../admin-icons/header_img.jpg"
+import keyboards from './keyboards.webp'
+import mouses from './mouse.webp'
+import monitors from './monitors.webp'
+import headphones from "./headphones.webp"
 
 
 import keyboard_1 from '../keyboards/A4TECH Bloody B135N Neon Backlit Wired Black Gaming Keyboard.webp'
@@ -43,7 +43,7 @@ import monitor_6 from "../monitors/Redragon VEGA-II BM24V9 24 Inch FHD Display H
 import headphone_1 from "../headphones/A4tech Bloody M590I ENC Sports Red Wired Gaming Headphone.webp"
 import headphone_2 from "../headphones/A4tech Bloody MR720 RGB Black Wireless (Tri Mode) Gaming Headphone.webp"
 import headphone_3 from "../headphones/a4tech-bloody-mr720-naraka-rgb-white-wireless-11736167136.webp"
-import headphone_4 from "../headphones/Corsair HS35 Stereo V2 Blue Wired Gaming Headset #CA-9011383-AP.webp"
+import headphone_4 from "../headphones/Corsair HS35 Stereo V2 Blue Wired Gaming Headset.webp"
 import headphone_5 from "../headphones/Corsair VOID RGB ELITE USB Premium White Gaming Headphone with 7.1 Surround Sound.webp"
 import headphone_6 from "../headphones/Corsair Void Wireless v2 White Gaming Headphone.webp"
 import headphone_7 from "../headphones/Fantech HG11 Pro Captain 7.1 RGB Wired Black Gaming Headphone.webp"
@@ -109,7 +109,7 @@ export const menu_list = [
         menu_image: headphones
     }]
 
-export const food_list = [
+export const accessories_list = [
     {
         _id: "1",
         name: "A4TECH Bloody B135N Neon Backlit Wired Black Gaming Keyboard",

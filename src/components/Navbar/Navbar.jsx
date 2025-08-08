@@ -1,5 +1,5 @@
 
-import { BrowserRouter, Link } from "react-router-dom";
+import {  Link } from "react-router-dom";
 import { assets } from "../../assets/admin-icons/assets";
 
 const Navbar = () => {

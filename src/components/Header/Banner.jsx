@@ -58,16 +58,16 @@ const Banner = () => {
                 <div className="scene ">
                     <div className="carousel keen-slider " ref={sliderRef}>
                         <div className="carousel__cell number-slide1 ">
-                            <img className="hover:transition hover:duration-150 hover:scale-150 " src={keyboard} alt="Keyboard"/>
+                            <img className="transition duration-150 hover:scale-75 lg:hover:scale-125 w-80" src={keyboard} alt="Keyboard"/>
                         </div>
                         <div className="carousel__cell number-slide2">
-                            <img className="hover:transition hover:duration-150 hover:scale-150" src={mouse} alt="Mouse"/>
+                            <img className="transition duration-150 hover:scale-75 lg:hover:scale-125" src={mouse} alt="Mouse"/>
                         </div>
                         <div className="carousel__cell number-slide3">
-                            <img className="hover:transition hover:duration-150 hover:scale-150"src={headphone} alt="Headphone"/>
+                            <img className="transition duration-150 hover:scale-75 lg:hover:scale-125" src={headphone} alt="Headphone"/>
                         </div>
                         <div className="carousel__cell number-slide4">
-                            <img className="hover:transition hover:duration-150 hover:scale-150" src={monitor}alt="Monitor"/>
+                            <img className="transition duration-150 hover:scale-75 lg:hover:scale-125" src={monitor}alt="Monitor"/>
                         </div>
                     </div>
                 </div>
