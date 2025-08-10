@@ -2,11 +2,11 @@
 import {  Link } from "react-router-dom";
 import { assets } from "../../assets/admin-icons/assets";
 
-const Navbar = () => {
+const Navbar = ({setShowLogin}) => {
     const navOptions = <>
         <ul className="lg:flex space-x-4">
             <li><Link to="/" className="hover:text-yellow-300 hover:scale-110 ">Home</Link></li>
-            <li><Link to="/menu" className="hover:text-yellow-300 hover:scale-110">Menu</Link></li>
+            <li><a href="#expolore-menu" className="hover:text-yellow-300 hover:scale-110">Menu</a></li>
             <li><Link to="/about" className="hover:text-yellow-300 hover:scale-110">About us</Link></li>
             <li><Link to="/contact" className="hover:text-yellow-300 hover:scale-110">Contact us</Link>
             </li>
@@ -34,12 +34,12 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end ">
-                <div className="md:flex items-center bg-gray-700">
+                <div className="md:flex md:visible invisible items-center bg-gray-700">
                     <input type="text" placeholder="Search..." className="input input-bordered w-24 bg-gray-700 md:w-auto" />
                     <img className="mx-2" src={assets.search_icon} alt="" />
                 </div>
                 <img className="mx-2" src={assets.bag_icon} alt="" />
-                <a className="btn rounded-3xl mx-2 font-bold hover:bg-gray-600 hover:text-white hover:transition duration-400">Sign in</a>
+                <button onClick={()=>setShowLogin(true)} className="btn rounded-3xl mx-2 font-bold hover:bg-gray-600 hover:text-white hover:transition duration-400">Sign in</button>
             </div>
         </div>
 

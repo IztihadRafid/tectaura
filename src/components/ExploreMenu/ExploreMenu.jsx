@@ -6,7 +6,7 @@ import { menu_list } from "../../assets/icons/assets";
 
 const ExploreMenu = ({ category, setCategory }) => {
   return (
-    <div>
+    <div id="expolore-menu" >
       <h1 className="md:text-5xl text-3xl text-center font-bold p-10">
         Explore Our Best Collection
       </h1>
