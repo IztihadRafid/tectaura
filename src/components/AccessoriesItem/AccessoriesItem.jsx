@@ -5,6 +5,7 @@ import { StoreContext } from "../../context/StoreContext";
 const AccessoriesItem = ({ id, name, image, description, price }) => {
 
     const { cartItems, addToCart, removeFromCart } = useContext(StoreContext)
+    const modalId = `${id}`
     return (
         <div className="card bg-base-100 w-80  shadow-xl">
             <figure><img className='w-52 ' src={image} alt="accessories" /> </figure>
@@ -22,7 +23,20 @@ const AccessoriesItem = ({ id, name, image, description, price }) => {
                 <p>{description.length > 150 ? description.slice(0, 150) + "..." : description}</p>
                 <p className='font-semibold mt-2'>Price {price}Tk</p>
                 <div className="card-actions justify-end">
-                    <button className="btn btn-soft ">Buy Now</button>
+                    {/* Open the modal using document.getElementById('ID').showModal() method */}
+                    <button className="btn" onClick={() => document.getElementById(modalId).showModal()}>View Details</button>
+                    <dialog id={modalId} className="modal modal-bottom sm:modal-middle">
+                        <div className="modal-box">
+                            <img src={image} alt={name} />
+                            <h3 className="font-bold text-lg">{name}</h3>
+                            <p className="py-4">{description}</p>
+                            <div className="modal-action">
+                                <form method="dialog">
+                                    <button className="btn">Close</button>
+                                </form>
+                            </div>
+                        </div>
+                    </dialog>
                 </div>
             </div>
         </div>

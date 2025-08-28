@@ -1,15 +1,15 @@
 
-import {  Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { assets } from "../../assets/admin-icons/assets";
 
-const Navbar = ({setShowLogin}) => {
+const Navbar = ({ setShowLogin }) => {
     const navOptions = <>
         <ul className="lg:flex space-x-4">
             <li><Link to="/" className="hover:text-yellow-300 hover:scale-110 ">Home</Link></li>
             <li><a href="#expolore-menu" className="hover:text-yellow-300 hover:scale-110">Menu</a></li>
             <li><Link to="/about" className="hover:text-yellow-300 hover:scale-110">About us</Link></li>
-            <li><Link to="/contact" className="hover:text-yellow-300 hover:scale-110">Contact us</Link>
-            </li>
+            <li><Link to="/contact" className="hover:text-yellow-300 hover:scale-110">Contact us</Link></li>
+            <li><Link to={"/cart"}><img className="w-5" src={assets.bag_icon} alt="" />Cart</Link></li>
         </ul>
     </>
 
@@ -26,7 +26,7 @@ const Navbar = ({setShowLogin}) => {
                         {navOptions}
                     </ul>
                 </div>
-                <a><img className="w-[150px]" src={assets?.logo} alt="Logo" /></a>
+                <Link to={"/"}><img className="w-[150px]" src={assets?.logo} alt="Logo" /></Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -38,8 +38,8 @@ const Navbar = ({setShowLogin}) => {
                     <input type="text" placeholder="Search..." className="input input-bordered w-24 bg-gray-700 md:w-auto" />
                     <img className="mx-2" src={assets.search_icon} alt="" />
                 </div>
-                <img className="mx-2" src={assets.bag_icon} alt="" />
-                <button onClick={()=>setShowLogin(true)} className="btn rounded-3xl mx-2 font-bold hover:bg-gray-600 hover:text-white hover:transition duration-400">Sign in</button>
+                <Link to={"/cart"}><img src={assets.bag_icon} alt="" /></Link>
+                <button onClick={() => setShowLogin(true)} className="btn rounded-3xl mx-2 font-bold hover:bg-gray-600 hover:text-white hover:transition duration-400">Sign in</button>
             </div>
         </div>
 
